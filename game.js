@@ -11,8 +11,7 @@ var level = 0;
 
 var started = false;
 
-alert("This is the simon game. To start the game you have to press a key on keybord. To go to the next level on this game, you have to click on the box that was higlited after pressing a key on keybord and you have to remember the sequnece on the previous level. Try it out and you'll understand the game in a bit or google it for better understaing. Enjoy.");
-
+alert("This is the simon game. To start the game you have to press the start key. To go to the next level on this game, you have to click on the box that was higlited after pressing a key on keybord and you have to remember the sequnece on the previous level. Try it out and you'll understand the game in a bit or google it for better understaing. Enjoy.");
 
 // game pattern
 
@@ -56,7 +55,8 @@ $(".btn").on("click", function(event) {
 // key pressed to start the game
 
 
-$(document).keypress(function() {
+$("#level-title").on("click", function() {
+    $("#level-title").fadeOut(10).fadeIn(10)
     if (started == false) {
       nextSequence();
       started = true;
@@ -100,7 +100,7 @@ function checkAnswer(currentLevel) {
         userClickedPattern = [];
         gamePattern = [];
 
-        $("#level-title").text("Game over, Press any key to start the game again");
+        $("#level-title").text("Restart");
 
     }
 
