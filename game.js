@@ -11,6 +11,8 @@ var level = 0;
 
 var started = false;
 
+alert("This is the simon game. To start the game you have to press a key on keybord. To go to the next level on this game, you have to click on the box that was higlited after pressing a key on keybord and you have to remember the sequnece on the previous level. Try it out and you'll understand the game in a bit or google it for better understaing. Enjoy.");
+
 
 // game pattern
 
